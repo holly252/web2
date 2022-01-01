@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>장상수파이팅</title>
+
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="colors.js"></script>
@@ -16,14 +16,13 @@
     <li><a href="#!css" onclick="fetchPage('css')">CSS</a></li>
     <li><a href="#!JavaScript" onclick="fetchPage"('JavaScript')>JavaScript</a></li>
   </ol>
+<article>
+</article>
 
-  <article>
-
-  </article>
   <script>
   function fetchPage(name){
     fetch(name).then(function(response){
-      response.text().then(function(text)){
+      response.text().then(function(text){
         document.querySelector('article').innerHTML = text;
       })
     });
