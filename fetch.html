@@ -3,10 +3,13 @@
   <head>
   </head>
   <body>
+    <article>
+      </article>
+
   <input type="botton" value="fetch" onclick="
     fetch('html').then(function(response){
       response.text().then(function(text){
-        alert(text);
+      documents.querySelector('article').innerHTML = text ;
       })
     })
     ">
