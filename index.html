@@ -28,6 +28,14 @@
       })
     });
   }
+ if(locatin.hash){
+   fetchPage(locatin.hash.substr(2));
+ } else {
+   fetchPage('welcome');
+ }
+
+
+
  </script>
 </body>
 </html>
