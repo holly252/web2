@@ -2,13 +2,14 @@
 <html>
 
   <body>
-    <article>
-      </article>
+  <article>
+
+  </article>
 
   <input type="botton" value="fetch" onclick="
     fetch('html').then(function(response){
       response.text().then(function(text){
-      documents.querySelector('article').innerHTML = text ;
+      document.querySelector('article').innerHTML = text ;
       })
     })
     ">
